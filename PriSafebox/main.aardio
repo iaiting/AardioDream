@@ -25,11 +25,11 @@ mb.onNavigation = function(url,navigationType){
 }
 
 import wsock.tcp.simpleHttpServer;
-mb.go( wsock.tcp.simpleHttpServer.startUrl("/html/main.aardio") ); 
+mb.go( wsock.tcp.simpleHttpServer.startUrl("/html/main.html") ); 
 mb.wait(); //等待页面完全打开
 
 //可以使用CSS选择器获取HTML节点对象
-mb.querySelector("#header .title-bar .title").innerText = "我 的 软 件";
+mb.querySelector("#header .title-bar .title").innerText = "私 密 箱";
 
 //添加可拖动边框
 import win.ui.resizeBorder;
