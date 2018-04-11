@@ -1,0 +1,53 @@
+** 搭建aardio开发环境
+
+*** 安装&卸载
++ 下载aardio最新安装包
+#+BEGIN_EXAMPLE
+官网 http://bbs.aardio.com/article-2-1.html 下载最新版本安装包
+#+END_EXAMPLE
+
+
++ aardio开发工具为绿色版本
+#+BEGIN_EXAMPLE
+直接解压到自己规划的目录下,如：C:\Local\Aardio
+
+
+建立C:\Local\Aardio\aardio.exe快捷方式，双击即可启动IDE开发环境
+#+END_EXAMPLE
+
++ 卸载aardio
+#+BEGIN_EXAMPLE
+直接卸载aardio解压后的目录
+#+END_EXAMPLE
+
+
+*** aardio快速入门教程
+#+BEGIN_EXAMPLE
+http://bbs.aardio.com/forum.php?mod=viewthread&tid=8663&from=portal
+#+END_EXAMPLE
+
+
+*** 常用设置
++ 设置颜值高的字体
+#+BEGIN_EXAMPLE
+打开 aardio\config\USE10.CFG 改写如下选项
+editor_font_name=Lucida Console
+#+END_EXAMPLE
+
++ 设置版权
+#+BEGIN_EXAMPLE
+打开 aardio\config\USE10.CFG 改写如下选项
+#+END_EXAMPLE
+
+
++ 设置默认最近打开的工程个数
+#+BEGIN_EXAMPLE
+C:\Local\aardio\extensions\plugin\view\startPage.aardio
+#+END_EXAMPLE
+
++ 设置默认默认编辑器
+#+BEGIN_EXAMPLE
+插件 -> 编辑器 
+研究 process.execute 函数
+#+END_EXAMPLE
+

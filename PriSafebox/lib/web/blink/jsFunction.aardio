@@ -1,0 +1,23 @@
+import web.blink;
+namespace web.blink.jsFunction{};
+
+//预定义全局JS函数
+..web.blink.jsBindFunction("windowCommand",1,function(cmd){
+    var mb = owner;
+    var winform = mb.getForm();
+
+    select(cmd) {
+    	case "min" {
+    		winform.hitmin();
+    	}
+    	case "max" {
+    		return winform.hitmax();
+    	}
+    	case "close" {
+    		return winform.close();
+    	}
+    	case "drag" {
+    		return winform.hitCaption()
+    	} 
+    }
+})

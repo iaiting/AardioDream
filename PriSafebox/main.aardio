@@ -1,0 +1,47 @@
+import win.ui;
+/*DSG{{*/
+mainForm = win.form(text="PriSafebox";right=759;bottom=469;border="none";mode="popup")
+mainForm.add()
+/*}}*/
+
+import web.blink.portable;//生成独立EXE
+import web.blink.jsFunction;//可选预定义全局JS函数
+import web.blink.form;//导入miniblink组件
+var mb = web.blink.form(mainForm);
+
+//导出网页js脚本可以直接调用的external对象
+mb.external = {
+    aardioCall = function(str){ 
+        mainForm.msgbox(str);
+    };
+}
+
+//打开链接时触发该事件
+mb.onNavigation = function(url,navigationType){ 
+	if( navigationType == 0/*_WKE_NAVIGATION_TYPE_LINKCLICK*/ ){
+	
+	}
+	return true;
+}
+
+import wsock.tcp.simpleHttpServer;
+mb.go( wsock.tcp.simpleHttpServer.startUrl("/html/main.aardio") ); 
+mb.wait(); //等待页面完全打开
+
+//可以使用CSS选择器获取HTML节点对象
+mb.querySelector("#header .title-bar .title").innerText = "私 密 箱";
+
+//添加可拖动边框
+import win.ui.resizeBorder;
+win.ui.resizeBorder(mainForm);
+
+//添加阴影
+import win.ui.shadow;
+win.ui.shadow(mainForm);
+
+//限定最大化范围
+import win.ui.minmax;
+win.ui.minmax(mainForm);
+
+mainForm.show();
+win.loopMessage();

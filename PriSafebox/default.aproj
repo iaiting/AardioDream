@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project ver="10" name="PriSafebox" libEmbed="true" icon="..." CompanyName="单位名称" FileDescription="PriSafebox" LegalCopyright="Copyright (C) 作者 2018" ProductName="PriSafebox" InternalName="PriSafebox" FileVersion="0.0.0.02" ProductVersion="0.0.0.02" publishDir="/Publish/" ui="win" output="PriSafebox.exe" dstrip="false">
+	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
+	<folder name="资源文件" path="res" embed="true"/>
+	<folder name="HTML" path="html" comment="" embed="true">
+		<file name="main.aardio" path="html\main.aardio" comment="html\main.aardio"/>
+		<folder name="js" path="html\js" comment="html\js"/>
+	</folder>
+</project>
