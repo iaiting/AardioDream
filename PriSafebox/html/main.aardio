@@ -17,7 +17,7 @@ html,body{
 	position:absolute;
 	top:0px;
 	left:0px;
-	height:33px;
+	height:28px;
 	width:100%;
 	background:rgb(52,152,220);
 	cursor:default;
@@ -87,9 +87,9 @@ html,body{
 #header .title-bar{
     margin-right:75px;
     padding-left:10px;
-    height:33px;
-    line-height: 33px;
-    font-size:15pt;
+    height:28px;
+    line-height: 28px;
+    font-size:9pt;
     color:#eee; 
 } 
 

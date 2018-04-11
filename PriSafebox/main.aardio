@@ -29,7 +29,7 @@ mb.go( wsock.tcp.simpleHttpServer.startUrl("/html/main.aardio") );
 mb.wait(); //等待页面完全打开
 
 //可以使用CSS选择器获取HTML节点对象
-mb.querySelector("#header .title-bar .title").innerText = "私 密 箱";
+mb.querySelector("#header .title-bar .title").innerText = "我 的 软 件";
 
 //添加可拖动边框
 import win.ui.resizeBorder;
