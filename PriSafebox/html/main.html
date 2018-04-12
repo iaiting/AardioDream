@@ -48,9 +48,16 @@ html,body{
 	box-sizing:border-box;
 }
 
+
+
+#container .container-head{
+	height:15%;
+	background:rgb(52,152,220);
+}
+
 /*中间内容栏 左侧列*/
 #container .lside{
-	height:100%;
+	height:85%;
 	width:150px;
 	float:left;
 	background:rgb(110,179,210);
@@ -58,7 +65,7 @@ html,body{
 
 /*中间内容栏 右侧列*/
 #container .rside{
-	height:100%;
+	height:85%;
 	margin-left:150px;
 	background:#FFF;
 	padding:20px;
@@ -130,8 +137,21 @@ html,body{
 	</div>
 
 	<div id="container">
-	    <div class="lside"> </div>
-    	<div class="rside"> aaaaaaaaaaaaaa当前时间:<?= time() ?> </div>
+		<div class="container-head">
+			    	<button onclick="javascript:external.aardioCall('hello')">我的好友</button>
+			    	<button>安全分享</button>
+			    	<button>安全邮件</button>
+			    	<button>安全聊天</button>
+			    	<button>安全会议</button>
+			    	<button>文件发件箱</button>
+			    	<button>密码保密箱</button>
+			    	<button>文件保密箱</button>
+			    	<button>更多应用</button>
+			    	<button>请插入key</button>
+		</div>
+	    <div class="lside">xx </div>
+    	<div class="rside">aaaaaaaaaaaaaa当前时间:<?= time() ?></div>
+
     </div>
 
 

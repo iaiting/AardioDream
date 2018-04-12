@@ -3,7 +3,7 @@
 	<file name="main.aardio" path="main.aardio" comment="启动程序代码"/>
 	<folder name="资源文件" path="res" embed="true"/>
 	<folder name="HTML" path="html" comment="" embed="true">
-		<file name="main.html" path="html\main.html.aardio" comment="html\main.aardio"/>
+		<file name="main.html" path="html\main.html" comment="html\main.html"/>
 		<folder name="js" path="html\js" comment="html\js"/>
 	</folder>
 </project>
